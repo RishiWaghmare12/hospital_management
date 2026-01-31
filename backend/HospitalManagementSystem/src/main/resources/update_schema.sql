@@ -1,0 +1,2 @@
+ALTER TABLE patient ADD COLUMN reset_token VARCHAR(255) NULL;
+ALTER TABLE patient ADD COLUMN reset_token_expiry TIMESTAMP NULL;
