@@ -15,10 +15,12 @@ pipeline {
         }
 
         stage('Checkout Code') {
-            steps {
-                 git url: 'https://github.com/RishiWaghmare12/hospital_management.git'
-            }
-        }
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/RishiWaghmare12/hospital_management.git'
+    }
+}
+
 
         stage('Build Docker Image') {
             steps {
